@@ -1,5 +1,30 @@
 # Sign-Up-Project
 
+## Github Cloning the Repo
+
+```bash
+# Navigate to the Repository:
+- Go to the main page of the GitHub repository/given link you want to clone.
+
+# Get the Repository URL:
+- Above the list of files, click on the “Code” button.
+- Copy the URL for the repository (you can choose either HTTPS or SSH).
+
+# Open Terminal or Git Bash:
+- Open your terminal or Git Bash (if you’re on Windows).
+
+# Change Directory:
+- Navigate to the location on your local machine where you want to clone the repository using the cd command.
+
+# Clone the Repository:
+- Type the following command and paste the URL you copied earlier:
+- git clone <repository_URL/>
+- Press Enter to create your local clone.
+```
+
+Then Right after the cloning process you can proceed  to the folowing steps below:
+(*Note: The first two steps are sufficient enough to run the project.)
+
 ## Build Setup
 
 ```bash

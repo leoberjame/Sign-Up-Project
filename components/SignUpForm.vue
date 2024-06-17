@@ -1,5 +1,7 @@
 <template>
-  <div class="sign-up-container sign-up-bordered"></div>
+  <div class="sign-up-container sign-up-bordered">
+    <form></form>
+  </div>
 </template>
 
 <script>

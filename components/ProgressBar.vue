@@ -2,6 +2,6 @@
 
 <script>
 export default {
-  name: 'SignUpForm',
+  name: 'ProgressBar',
 }
 </script>

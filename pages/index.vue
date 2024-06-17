@@ -1,7 +1,10 @@
 <template>
   <main class="index-page">
-    <div class="sign-up-container"></div>
-    <div class="marketing-container"></div>
+    <ProgressBar />
+    <div class="content-container">
+      <div class="sign-up-container"></div>
+      <div class="marketing-container"></div>
+    </div>
   </main>
 </template>
 

@@ -1,17 +1,98 @@
 // Define global variables
 
-// base variables
+// Base variables
 @breakpoint-lg: 1280px;
 @full-viewport-height: 100vh;
+@border-radius: 20px;
+@flex-row-start: flex-row-start;
+@grid-items-center: grid-items-center;
 
 // Colors
 @bright: #FFC100;
 @light-yellow: #FFE6BE;
 @blue: #0A87C9;
 @light-blue: #E1EAF4;
+@grey: #E0E0E0;
 
 // Sign Up Form Variables
 @max-width-signup-form: 700px;
+@sign-up-width-min-max-value: min(100%, 700px);
+@sign-up-border-selector: sign-up-bordered;
+@sign-up-margin-width-height-selector: sign-up-container;
 
-// Sign Up Form Variables
+// Marketing Placeholder Variables
 @max-width-marketing: 500px;
+@marketing-placeholder-width-min-max-value: min(100%, 500px);
+@marketing-placeholder-border-selector: marketing-bordered;
+@marketing-placeholder-margin-width-height-selector: marketing-container;
+@skewed-bg: skewed-footer;
+
+// Phone Number Placeholder Variables
+@phone-number-content: phone-number-content;
+
+// Interpolated
+.@{sign-up-border-selector} {
+    border: 2px solid @grey;
+    border-radius: @border-radius;
+}
+
+.@{grid-items-center} {
+    display: grid;
+
+    @media (min-width: @breakpoint-lg) {
+        justify-content: center;
+    }
+}
+
+.@{marketing-placeholder-border-selector} {
+    border: 2px solid @bright;
+    border-radius: @border-radius;
+}
+
+.@{sign-up-margin-width-height-selector} {
+    margin-top: 30px;
+    width: min(100%, @sign-up-width-min-max-value);
+    height: 65vh;
+
+    @media (min-width: @breakpoint-lg) {
+        height: 70vh;
+    }
+}
+
+.@{marketing-placeholder-margin-width-height-selector} {
+    margin-top: 30px;
+    width: min(100%, @marketing-placeholder-width-min-max-value);
+    height: 65vh;
+
+    @media (min-width: @breakpoint-lg) {
+        height: 70vh;
+    }
+}
+
+.@{skewed-bg} {
+    padding: 300px 0;
+    transform: skew(0deg, -12deg);
+    margin-top: -275px;
+    background-color: @light-yellow;
+
+    @media (min-width: @breakpoint-lg) {
+        padding: 250px 0;
+        transform: skew(0deg, -20deg);
+        margin-top: -100px;
+    }
+}
+
+.@{flex-row-start} {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8px;
+}
+
+.@{phone-number-content} {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+}

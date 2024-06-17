@@ -1,9 +1,12 @@
 <template>
   <main class="index-page">
     <ProgressBar />
-    <div class="content-container">
-      <div class="sign-up-container"></div>
-      <div class="marketing-container"></div>
+    <div class="grid-items-center">
+      <div class="content-container">
+        <SignUpForm />
+        <MarketingPlaceholder />
+      </div>
+      <PhoneNumber />
     </div>
   </main>
 </template>

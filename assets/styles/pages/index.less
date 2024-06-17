@@ -1,16 +1,23 @@
 .index {
     &-page {
+        padding-block: 20px;
 
         .content {
             &-container {
                 display: grid;
                 padding: 10px;
-                grid-template-columns: auto auto;
+                grid-template-columns: 100%;
                 gap: 1rem;
                 justify-content: center;
                 align-items: center;
                 align-content: center;
                 justify-items: center;
+
+                transition: all 1s ease-in-out;
+
+                @media (min-width: @breakpoint-lg) {
+                    grid-template-columns: auto auto;
+                }
             }
         }
     }

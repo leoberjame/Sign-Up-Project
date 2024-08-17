@@ -1,6 +1,6 @@
 <template>
   <div class="progress-bar">
-    <div class="step completed">
+    <div class="step completed test-update">
       <div class="circle"><span class="step-text"></span></div>
       <div class="label"></div>
     </div>
